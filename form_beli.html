@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Beli</title>
+    <!-- Masukkan tautan CSS jika Anda memiliki stylesheet terpisah -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <h1>Formulir Pembelian</h1>
+
+    <form action="proses_pembelian.html" method="post" enctype="multipart/form-data">
+        <label for="nama">Nama Anda:</label>
+        <input type="text" id="nama" name="nama" required>
+        <br> <!-- Menambahkan jarak di sini -->
+    
+        <label for="alamat">Alamat Pengiriman:</label>
+        <textarea id="alamat" name="alamat" rows="4" required></textarea>
+        <br> <!-- Menambahkan jarak di sini -->
+    
+        <label for="jumlah">Jumlah Pembelian:</label>
+        <input type="number" id="jumlah" name="jumlah" required min="0" max="100">
+        <br> <!-- Menambahkan jarak di sini -->
+    
+        <label for="gambar">Pilih Gambar:</label>
+        <input type="file" id="gambar" name="gambar" accept="image/*" required>
+        <br> <!-- Menambahkan jarak di sini -->
+    
+        <label for="jenis-kue">Jenis Kue:</label>
+        <select id="jenis-kue" name="jenis-kue" required>
+            <option value="chocolate lava">Chocolate Lava</option>
+            <option value="chocolate cream">Chocolate Cream</option>
+            <option value="real strawberry cake">Real Strawberry Cake</option>
+            <option value="sacher torte cake">Sacher Torte Cake</option>
+            <option value="real raspberry cake">Real Raspberry Cake</option>
+            <option value="real strawberry cupcake">Real Strawberry Cupcake</option>
+        </select>
+        <br> <!-- Menambahkan jarak di sini -->
+    
+        <!-- Tambahkan tombol submit di sini -->
+        <button type="submit" class="beli-button">
+            <span>Beli Sekarang</span>
+        </button>
+    </form>
+    
+
+    <!-- Tambahkan tautan ke JavaScript jika diperlukan -->
+    <script src="js/script.js"></script>
+</body>
+</html>
